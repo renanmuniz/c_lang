@@ -16,7 +16,6 @@ C_LANG/
 ├── src/ # Directory for code source files and folders
 ├── .gitignore # Specifies intentionally untracked files to ignore
 ├── README.md # Project documentation
-├── test.c # C source file to test the setup
 ```
 
 ---
