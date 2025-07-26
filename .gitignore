@@ -1,55 +1,51 @@
-# Prerequisites
-*.d
-
-# Object files
+# Compiled object files
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
 
 # Precompiled Headers
 *.gch
-*.pch
 
-# Libraries
-*.lib
+# Compiled binary files
+*.out
+*.exe
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
+*.dll
 *.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Core dumps
+core
+*.core
 
 # Debug files
 *.dSYM/
-*.su
-*.idb
-*.pdb
+*.stackdump
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Dependency files
+*.d
 
-# debug information files
-*.dwo
+# Logs and temporary files
+*.log
+*.tmp
+*~
+
+# CMake build directory
+build/
+cmake-build*/
+
+# Makefile-generated files
+Makefile
+Makefile.in
+configure
+config.h
+config.log
+config.status
+
+# Visual Studio Code settings
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Others
+tags
+.DS_Store
