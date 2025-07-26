@@ -1,13 +1,20 @@
 FROM debian:trixie
 
-# Install base tools and create non-root user
 RUN apt-get update && apt-get install -y \
     gcc \
     gdb \
     vim \
     git \
     sudo \
+    tzdata \
     && apt-get clean
+
+# Set timezone environment variable
+ENV TZ=America/Sao_Paulo
+
+# Configure timezone non-interactively
+RUN ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && \
+    dpkg-reconfigure -f noninteractive tzdata
 
 # Create user vscode with passwordless sudo
 RUN useradd -m vscode && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers

@@ -93,8 +93,8 @@ int main() {
 3. Open a terminal inside the container and compile:
 
 ```bash
-Compile: gcc test.c -o build/test
-Run./build/test 
+Compile: gcc src/setup_test.c -o build/setup_test
+Run: ./build/setup_test 
 ```
 
 ---
