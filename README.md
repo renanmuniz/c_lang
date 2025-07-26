@@ -8,11 +8,15 @@ This guide will help you set up the local environment using **DevContainer** in 
 ### 📁 Project Structure
 
 ```
-your-project/
+C_LANG/
 ├── .devcontainer/
-│   ├── devcontainer.json
-│   └── Dockerfile
-├── hello.c
+│ ├── devcontainer.json # Dev container configuration for VS Code
+│ └── dockerfile # Dockerfile to build the dev container
+├── build/ # Directory for test-related build outputs
+├── src/ # Directory for code source files and folders
+├── .gitignore # Specifies intentionally untracked files to ignore
+├── README.md # Project documentation
+├── test.c # C source file to test the setup
 ```
 
 ---
