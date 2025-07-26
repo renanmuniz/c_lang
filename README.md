@@ -1,7 +1,7 @@
 
-## 🛠️ C DevContainer Setup Guide (GCC + VS Code)
+## C Programming language study repository
 
-This guide will help you set up a **DevContainer** in **Visual Studio Code** to write and run C programs using **GCC**, with a minimal and focused environment.
+This guide will help you set up the local environment using **DevContainer** in **Visual Studio Code** to write and run C programs using **GCC**, with a minimal and focused environment.
 
 ---
 
@@ -91,7 +91,7 @@ int main() {
 
 ```bash
 Compile: gcc test.c -o build/test
-Run ./build/test 
+Run./build/test 
 ```
 
 ---
