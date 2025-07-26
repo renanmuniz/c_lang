@@ -1,0 +1,19 @@
+FROM debian:trixie
+
+# Install base tools and create non-root user
+RUN apt-get update && apt-get install -y \
+    gcc \
+    gdb \
+    vim \
+    git \
+    sudo \
+    && apt-get clean
+
+# Create user vscode with passwordless sudo
+RUN useradd -m vscode && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Set working directory
+WORKDIR /workspace
+
+# Use non-root user
+USER vscode

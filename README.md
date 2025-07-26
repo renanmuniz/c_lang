@@ -90,8 +90,8 @@ int main() {
 3. Open a terminal inside the container and compile:
 
 ```bash
-gcc hello.c -o hello
-./hello
+Compile: gcc test.c -o build/test
+Run ./build/test 
 ```
 
 ---
