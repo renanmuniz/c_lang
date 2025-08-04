@@ -16,5 +16,7 @@
     }
   },
   "remoteUser": "vscode",
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gdb"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gdb",
+  "features": {},
+  "runArgs": ["--rm"] //delete container after close vscode
 }
